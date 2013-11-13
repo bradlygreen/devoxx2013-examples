@@ -1,0 +1,18 @@
+<html ng-app='coolApp'>
+<head><title>4 Two Controllers</title></head>
+<body>
+
+  <p ng-controller='GreetCtrl as greeter'>
+    Hi, {{greeter.greeting}}
+    <input ng-model='greeter.greeting'>
+  </p>
+
+  <p ng-controller='GreetCtrl as greeter'>
+    Hi, {{greeter.greeting}}
+    <input ng-model='greeter.greeting'>
+  </p>
+
+  <script src='../angular.js'></script>
+  <script src='two-controllers.js'></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='mailApp'>
+<head>
+  <title>7 Angular Mail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+  <div class='jumbotron'><h2 class='container'>Angular Mail</h1></div>
+
+  <div class='row'>
+    <div class='col-md-1' ng-controller='NavController as nav'>
+      <ul class='nav nav-pills nav-stacked'>
+        <li ng-class='{active: nav.is("inbox")}'><a href='#inbox'>Inbox</a></li>
+        <li ng-class='{active: nav.is("compose")}'><a href='#compose'>Compose</a></li>
+        <li ng-class='{active: nav.is("settings")}'><a href='#settings'>Settings</a></li>
+        <li ng-class='{active: nav.is("about")}'><a href='#about'>About</a></li>
+      </ul>
+    </div>
+
+    <div class='col-md-11'>
+      <ng-view></ng-view>
+    </div>  
+
+  </div>
+
+  <script src='../angular.js'></script>
+  <script src='../angular-route.js'></script>
+  <script src='mail-app.js'></script>
+</body>
+</html>

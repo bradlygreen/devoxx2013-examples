@@ -1,0 +1,13 @@
+<html ng-app='coolApp'>
+<head><title>2 Hello AngularJS</title></head>
+<body>
+
+  <p ng-controller='GreetController as greeter'>
+    {{greeter.greeting}}
+    <input ng-model='greeter.greeting'>
+  </p>
+
+  <script src='../angular.js'></script>
+  <script src='hello.js'></script>
+</body>
+</html>

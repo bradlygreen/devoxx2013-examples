@@ -1,0 +1,12 @@
+<table class='table'>
+  <tr>
+    <th>Sender</th>
+    <th>Date</th>
+    <th>Subject</th>
+  </tr>
+  <tr ng-repeat='message in inbox.messages'>
+    <td>{{message.sender}}</td>
+    <td>{{message.date | date}}</td>
+    <td><a href='#/message/{{$index}}'>{{message.subject}}</a></td>
+  </tr>
+</table>
