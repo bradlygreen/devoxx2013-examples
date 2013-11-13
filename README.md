@@ -5,9 +5,8 @@ Example code I used in the AngularJS University session at Devoxx 2013 in Antwer
 
 Nothing too interesting here, though the 7-mail-app directory may be useful for folks new to AngularJS who want to see how to set up deep linking that includes changing menu-highlighting along with view changes.
 
-Except for 7-mail-app, you can view all examples by just opening the HTML file in your browser.  For the mail app, you'll need a web server to satisfy the browser same-origin-policy security model.  If you have Python instelled, you can do this easily:
+Except for 7-mail-app, you can view all examples by just opening the HTML file in your browser.  For the mail app, you'll need a web server to satisfy the browser same-origin-policy security model.  If you have Python instelled, you can do this easily.  In a shell, cd to the root of this project and run:
 
-    $ cd /devoxx
     $ python -m SimpleHTTPServer
     
 You can then view the directory at [http://localhost:8000](http://localhost:8000).
